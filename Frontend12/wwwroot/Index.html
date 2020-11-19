@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link href="css/index.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/vendor.min.css" />
 
@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,25 +41,69 @@
                         <a class="nav-link" href="#">Comments <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
-                
+
             </div>
         </nav>
     </header>
     <main>
-        <div class="col text-white" style="height:200px; padding:0px">
-            <img class="img-fluid" style="background-image: url('img/headerCat.jpg');
-                 height: 100%;
-                 width:100%;
-                 background-position: center;
-                 background-repeat: no-repeat;
-                 background-size: cover;">
-            <div class="card-img-overlay row " style="margin:0px;">
-                <div class="col my-auto mx-auto"><h1 class="card-title text-center">I am centered. Easily.</h1></div>
+        <div class="card text-white background">
+            <div class="card-img-overlay d-flex">
+                <h1 class="card-title my-auto mx-auto">I am centered. Easily.</h1>
             </div>
         </div>
-    </main>
-    <footer>
+        <div class="container">
+            <ul class="list-unstyled mt-4">
+                <li class="media">
+                    <img class="mr-3 icon" src="img/avatar/cat1.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </li>
+                <li class="media mt-4">
+                    <img class="mr-3 icon" src="img/avatar/newcats.jpg" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h5 class="mt-0">Media heading</h5>
+                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 
+                        <div class="media mt-1">
+                            <img class="mr-3 icon" src="img/avatar/cat3.png" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Media heading</h5>
+                                Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+                                <div class="media mt-1">
+                                    <img class="mr-3 icon" src="img/avatar/newcats.jpg" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0">Media heading</h5>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media mt-1">
+                            <img class="mr-3 icon" src="img/avatar/cat2.png" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Media heading</h5>
+                                Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="media mt-4">
+                    <img class="mr-3 icon" src="img/avatar/cats.jpg" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer class="footer mt-auto">
+        <div class="container text-center">
+            <span>I'm stiky footer. With flexbox.</span>
+        </div>
     </footer>
     <script src="/vendor.min.js"></script>
 </body>
