@@ -11,13 +11,18 @@ body {
 
 main{
     margin-top:56px;
+    flex:1;
+}
+
+.shift{
+    position:relative;
+    top:-56px;
 }
 
 main > div.background {
     height: 200px;
     background-image: url('../img/headerCat.jpg');
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 

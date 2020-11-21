@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Hero <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#hero">Hero <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Form <span class="sr-only">(current)</span></a>
@@ -31,14 +31,14 @@
                             Form items
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Names</a>
-                            <a class="dropdown-item" href="#">More information</a>
+                            <a class="dropdown-item" href="#name">Names</a>
+                            <a class="dropdown-item" href="#moreInformation">More information</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Submit</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Comments <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#comments">Comments <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
 
@@ -47,12 +47,39 @@
     </header>
     <main>
         <div class="card text-white background">
+            <p class="shift" id="hero"></p>
             <div class="card-img-overlay d-flex">
                 <h1 class="card-title my-auto mx-auto">I am centered. Easily.</h1>
             </div>
         </div>
+       
         <div class="container">
-            <ul class="list-unstyled mt-4">
+            <form class="m-2">
+                <div class="form-row">
+                    <p class="shift" id="name"></p>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" placeholder="Owner's name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" placeholder="Cat's name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <p class="shift" id="moreInformation"></p>
+                    <div class="form-group col-md-6">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password">
+                    </div>
+
+                </div>
+            </form>
+            <p class="shift" id="comments"></p>
+            <div class="alert alert-secondary my-4 " role="alert">
+                <h2 class="text-success">Explore our community!</h2>
+            </div>
+            <ul class="list-unstyled">
                 <li class="media">
                     <img class="mr-3 icon" src="img/avatar/cat1.png" alt="Generic placeholder image">
                     <div class="media-body">
