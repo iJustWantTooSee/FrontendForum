@@ -7,12 +7,15 @@
     <link href="css/index.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/vendor.min.css" />
+    <!-- Web fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
 
     <title>Web-Frontend12</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,7 +27,7 @@
                         <a class="nav-link" href="#hero">Hero <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Form <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#form">Form <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -34,7 +37,7 @@
                             <a class="dropdown-item" href="#name">Names</a>
                             <a class="dropdown-item" href="#moreInformation">More information</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Submit</a>
+                            <a class="dropdown-item" href="#submit">Submit</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -46,15 +49,26 @@
         </nav>
     </header>
     <main>
-        <div class="card text-white background">
+        <div class="card text-white background deletBorder">
             <p class="shift" id="hero"></p>
             <div class="card-img-overlay d-flex">
                 <h1 class="card-title my-auto mx-auto">I am centered. Easily.</h1>
             </div>
         </div>
-       
         <div class="container">
-            <form class="m-2">
+            <p class="shift" id="form"></p>
+            <div class="row mt-2 mx-2 justify-content-md-between justify-content-center">
+                <div class="col-auto"><h2>Welcome to our cat site!</h2></div>
+                <div class="col-auto d-none d-md-block">
+                    <a href="https://ru-ru.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="https://vk.com/" target="_blank"><i class="fab fa-vk fa-2x"></i></a>
+                    <a href="https://www.instagram.com/?hl=ru" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.youtube.com/?gl=RU&hl=ru" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                </div>
+            </div>
+            <div class=""></div>
+            <div class="text-center mt-2 mb-3"><h1>Want to join us?</h1></div>
+            <form class="my-2">
                 <div class="form-row">
                     <p class="shift" id="name"></p>
                     <div class="form-group col-md-6">
@@ -72,12 +86,27 @@
                     <div class="form-group col-md-6">
                         <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password">
                     </div>
-
+                </div>
+                <p class="shift" id="submit"></p>
+                <div class="form-group">
+                    <label for="formGroupExampleInput"><b>Breed</b></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Breed, hair, additional info">
+                </div>
+                <div class="row no-gutters">
+                    <div class="col">
+                        <div class="text-right">
+                            <button type="reset" class="btn" id="clean">Clean</button>
+                            <button type="button" class="btn btn-primary ml-1" data-toggle="modal"
+                                    data-target="#confirm" id="SignBtn">Sign in</button>
+                        </div>
+                    </div>
                 </div>
             </form>
             <p class="shift" id="comments"></p>
-            <div class="alert alert-secondary my-4 " role="alert">
-                <h2 class="text-success">Explore our community!</h2>
+            <div class="row">
+                <div class="col-12 alert alert-secondary my-4 " role="alert">
+                    <h2 class="text-success">Explore our community!</h2>
+                </div>
             </div>
             <ul class="list-unstyled">
                 <li class="media">
